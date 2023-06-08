@@ -13,10 +13,17 @@ const LargeGraph: React.FC = () => {
     <>
       <Header />
       { activeDemo === 'demo1' ? <LargeDemoPage language='en' /> : <SmallDemoPage language='en' />}
+      <a
+        style={{ position: 'absolute', top: '86px', right: '24px', width: '190px', textAlign: 'center' }}
+        href='http://github.com/antvis/g6'
+        target='_blank'
+      >
+        {'Encourage by GitHub Star ❤️'}
+      </a>
       <select
         className='v5-demos'
         onChange={handleChangeDemo}
-        style={{ position: 'absolute', top: '90px', right: '24px', width: '135px' }}
+        style={{ position: 'absolute', top: '120px', right: '24px', width: '135px' }}
       >
         <option value="demo1">Large Graph DEMO(7167 nodes)</option>
         <option value="demo2">Small Graph DEMO</option>

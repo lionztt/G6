@@ -15,7 +15,7 @@ iframe.title = 'condescending-graphinsight-bank';
 
 const info = document.createElement('div');
 info.innerHTML = `
-<p>友情提示，如果CodeSandbox打开比较慢，可以访问 <a href='https://graphinsight.antgroup.com/#/workspace?type=case' target='_blank'>「GraphInsight」</a> 在线查看，
+<p>友情提示，如果CodeSandbox打开比较慢，可以访问 <a href='https://insight.antv.antgroup.com/#/dataset/case' target='_blank'>「G6VP」</a> 在线查看，
 它是 AntV 团队基于 G6 研发的一款图分析应用低代码搭建工具与分析洞察产品，它既可以帮助用户在线实现关系数据的可视化，也可帮助开发者一键导出图画布SDK，极大提高研发效率
 </p>
 `;
