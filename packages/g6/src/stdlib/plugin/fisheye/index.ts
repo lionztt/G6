@@ -1,5 +1,4 @@
 import { clone, throttle } from '@antv/util';
-import { Text } from '@antv/g';
 import { Point } from '../../../types/common';
 import { IGraph } from '../../../types';
 import { ShapeStyle } from '../../../types/item';

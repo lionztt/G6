@@ -158,7 +158,9 @@ export default async () => {
     });
 
     clearButton.addEventListener('click', (e) => {
-      
+      const { plugin: fisheye } =
+        graph.pluginController.pluginMap.get('fisheye1');
+        fisheye.clear();
     });
     swithButton.addEventListener('click', (e) => {
       if (swithButton.value === 'Disable') {
@@ -170,16 +172,19 @@ export default async () => {
       }
     });
     configScaleRBy.addEventListener('change', (e) => {
+      const { plugin: fisheyeOrigin } =
+        graph.pluginController.pluginMap.get('fisheye1');
       fisheye = {
-        ...fisheye,
+        ...fisheyeOrigin.options,
         scaleRBy: e.target.value,
       };
       graph.updatePlugin(fisheye);
     });
     configScaleDBy.addEventListener('change', (e) => {
-      // fisheye.scaleDBy = e.target.value;
+      const { plugin: fisheyeOrigin } =
+        graph.pluginController.pluginMap.get('fisheye1');
       fisheye = {
-        ...fisheye,
+        ...fisheyeOrigin.options,
         scaleDBy: e.target.value,
       };
       graph.updatePlugin(fisheye);
